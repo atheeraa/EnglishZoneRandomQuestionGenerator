@@ -7,8 +7,10 @@
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css'><link rel="stylesheet" href="./style.css">
 <link rel='stylesheet' href='style.css'>
 
+
 </head>
 <body>
+ 
 <!-- partial:index.partial.html -->
 <div id="question" class="animated">
 Click the button to get a new question.</div>
@@ -21,7 +23,14 @@ Click the button to get a new question.</div>
 Currently there are : <p id="total"style="display:inline"> </p> questions
 <br> 
 <br> 
+<br> </div>
+<p id="footer"> This website is developed as an icebreaker, to practice English for the use of English zone, King Khlaid university
+    </p>
 <br> 
+<br> 
+<br> 
+
+<!--
 want to add a question? Send it to us.
 <br> 
 <br>
@@ -30,9 +39,33 @@ want to add a question? Send it to us.
 <textarea id ="newQ" > </textarea>
 <br> 
 
-<button   id="send"  type="submit" onclick="postData()"> Send </button>
+<button   id="send"  type="submit" onclick="send()"> Send </button>
 
   <p id="h"style="display:inline"> </p>
+<!-- The core Firebase JS SDK is always required and must be listed first 
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries 
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD6lISk9-JLNbpVlAqrMYBE7HGoqFZKXkc",
+    authDomain: "random-questions-generator.firebaseapp.com",
+    databaseURL: "https://random-questions-generator.firebaseio.com",
+    projectId: "random-questions-generator",
+    storageBucket: "random-questions-generator.appspot.com",
+    messagingSenderId: "616257165697",
+    appId: "1:616257165697:web:e9da91621cbf3c05733080",
+    measurementId: "G-BN19G14JJ9"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+-->
  </div>
 </body>
 </html>
